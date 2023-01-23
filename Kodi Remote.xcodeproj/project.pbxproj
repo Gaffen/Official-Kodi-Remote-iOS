@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0689CCD827F112910098E6AA /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0689CCD727F112910098E6AA /* ShareViewController.swift */; };
+		0689CCDB27F112910098E6AA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0689CCD927F112910098E6AA /* MainInterface.storyboard */; };
+		0689CCDF27F112910098E6AA /* YTShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0689CCD527F112910098E6AA /* YTShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0F00207816EE247A003822B5 /* OBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F00207616EE247A003822B5 /* OBSlider.m */; };
 		0F05FB69170D79D400BBA833 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F05FB68170D79D400BBA833 /* NSString+MD5.m */; };
 		0F089AA518EC4E3300F32430 /* SettingsValuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F089AA418EC4E3300F32430 /* SettingsValuesViewController.m */; };
@@ -102,7 +105,36 @@
 		C78C30F528F877870055CD95 /* VersionCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = C78C30F428F877870055CD95 /* VersionCheck.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0689CCDD27F112910098E6AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F5548ED151D1187007E633F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0689CCD427F112910098E6AA;
+			remoteInfo = YTShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0689CCE027F112910098E6AA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0689CCDF27F112910098E6AA /* YTShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0689CCD527F112910098E6AA /* YTShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YTShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0689CCD727F112910098E6AA /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		0689CCDA27F112910098E6AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0689CCDC27F112910098E6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0689CCE427F13CA90098E6AA /* Kodi Remote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kodi Remote.entitlements"; sourceTree = "<group>"; };
 		0F00207516EE247A003822B5 /* OBSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSlider.h; sourceTree = "<group>"; };
 		0F00207616EE247A003822B5 /* OBSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSlider.m; sourceTree = "<group>"; };
 		0F0320841C59531700C7E25D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -301,6 +333,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0689CCD227F112910098E6AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0F5548F3151D1187007E633F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +359,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0689CCD627F112910098E6AA /* YTShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0689CCD727F112910098E6AA /* ShareViewController.swift */,
+				0689CCD927F112910098E6AA /* MainInterface.storyboard */,
+				0689CCDC27F112910098E6AA /* Info.plist */,
+			);
+			path = YTShareExtension;
+			sourceTree = "<group>";
+		};
 		0F00207316EE247A003822B5 /* OBSlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,10 +520,12 @@
 		0F5548EB151D1187007E633F = {
 			isa = PBXGroup;
 			children = (
+				0689CCE427F13CA90098E6AA /* Kodi Remote.entitlements */,
 				0F59E2661564796B00184AE8 /* CONTRIBUTING.md */,
 				0F59E26315646FB800184AE8 /* LICENSE */,
 				0F8717911564566300AE2D48 /* README.md */,
 				0F554900151D1187007E633F /* XBMC Remote */,
+				0689CCD627F112910098E6AA /* YTShareExtension */,
 				0F5548F9151D1187007E633F /* Frameworks */,
 				0F5548F7151D1187007E633F /* Products */,
 			);
@@ -484,6 +535,7 @@
 			isa = PBXGroup;
 			children = (
 				0F5548F6151D1187007E633F /* Kodi Remote.app */,
+				0689CCD527F112910098E6AA /* YTShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -677,6 +729,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0689CCD427F112910098E6AA /* YTShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0689CCE327F112910098E6AA /* Build configuration list for PBXNativeTarget "YTShareExtension" */;
+			buildPhases = (
+				0689CCD127F112910098E6AA /* Sources */,
+				0689CCD227F112910098E6AA /* Frameworks */,
+				0689CCD327F112910098E6AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YTShareExtension;
+			productName = YTShareExtension;
+			productReference = 0689CCD527F112910098E6AA /* YTShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		0F5548F5151D1187007E633F /* Kodi Remote */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F55491A151D1187007E633F /* Build configuration list for PBXNativeTarget "Kodi Remote" */;
@@ -684,10 +753,12 @@
 				0F5548F2151D1187007E633F /* Sources */,
 				0F5548F3151D1187007E633F /* Frameworks */,
 				0F5548F4151D1187007E633F /* Resources */,
+				0689CCE027F112910098E6AA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0689CCDE27F112910098E6AA /* PBXTargetDependency */,
 			);
 			name = "Kodi Remote";
 			productName = "XBMC Remote";
@@ -702,6 +773,13 @@
 			attributes = {
 				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = "Team Kodi";
+				TargetAttributes = {
+					0689CCD427F112910098E6AA = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1420;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 0F5548F0151D1187007E633F /* Build configuration list for PBXProject "Kodi Remote" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -733,11 +811,20 @@
 			projectRoot = "";
 			targets = (
 				0F5548F5151D1187007E633F /* Kodi Remote */,
+				0689CCD427F112910098E6AA /* YTShareExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0689CCD327F112910098E6AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0689CCDB27F112910098E6AA /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0F5548F4151D1187007E633F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -774,6 +861,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0689CCD127F112910098E6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0689CCD827F112910098E6AA /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0F5548F2151D1187007E633F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -841,7 +936,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0689CCDE27F112910098E6AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0689CCD427F112910098E6AA /* YTShareExtension */;
+			targetProxy = 0689CCDD27F112910098E6AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		0689CCD927F112910098E6AA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0689CCDA27F112910098E6AA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		0F554903151D1187007E633F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -893,6 +1004,85 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0689CCE127F112910098E6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YTShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = YTShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Team Kodi. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.joethefox.XBMC-Remote.YTShareExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0689CCE227F112910098E6AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YTShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = YTShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Team Kodi. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.joethefox.XBMC-Remote.YTShareExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		0F554918151D1187007E633F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -993,8 +1183,10 @@
 		0F55491B151D1187007E633F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Kodi Remote.entitlements";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XBMC Remote/Kodi Remote-Prefix.pch";
 				INFOPLIST_FILE = "XBMC Remote/Kodi Remote-Info.plist";
@@ -1012,15 +1204,20 @@
 		0F55491C151D1187007E633F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Kodi Remote.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XBMC Remote/Kodi Remote-Prefix.pch";
 				INFOPLIST_FILE = "XBMC Remote/Kodi Remote-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.joethefox.XBMC-Remote";
 				PRODUCT_NAME = "Kodi Remote";
-				PROVISIONING_PROFILE_SPECIFIER = "Kodi Remote AppStore";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1029,6 +1226,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0689CCE327F112910098E6AA /* Build configuration list for PBXNativeTarget "YTShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0689CCE127F112910098E6AA /* Debug */,
+				0689CCE227F112910098E6AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0F5548F0151D1187007E633F /* Build configuration list for PBXProject "Kodi Remote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
